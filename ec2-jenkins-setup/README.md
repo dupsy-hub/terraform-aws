@@ -121,7 +121,7 @@ key_name           = "project-key"
 availability_zone  = "us-east-1a"
 ```
 
-### 🔐Key Pair
+### 🔐 Key Pair
 
 - The `keypair.tf` file generates a key pair automatically for use in Terraform
 
