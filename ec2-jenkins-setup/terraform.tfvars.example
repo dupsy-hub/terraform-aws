@@ -1,0 +1,22 @@
+# terraform.tfvars.example
+
+# AWS region to deploy resources in
+aws_region    = "us-east-1"
+
+# AMI ID for the EC2 instance (Ubuntu preferred)
+ami_id        = "ami-xxxxxxxxxxxxxxxxx"  # Replace with a valid Ubuntu AMI
+
+# EC2 instance type
+instance_type = "t2.micro"
+
+# Tags (resource names)
+instance_name     = "jenkins-instance"
+vpc_name          = "jenkins-vpc"
+subnet_name       = "jenkins-subnet"
+route_table_name  = "public-route-table"
+
+# S3 bucket name for Terraform remote state (must be globally unique)
+s3_bucket     = "your-terraform-state-bucket"
+
+# DynamoDB table name for Terraform state locking
+dynamodb_table = "your-lock-table-name"
